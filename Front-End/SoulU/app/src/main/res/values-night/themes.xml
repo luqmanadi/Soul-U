@@ -1,16 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SoulU" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+    <style name="Theme.SoulU" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/forest_frolic</item>
+    </style>
+
+    // Thema Splash Screen
+    <style name="Theme.App.SplashScreenSoul_U" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/forest_frolic</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_splashscreen</item>
+        <item name="postSplashScreenTheme">@style/Theme.SoulU</item>
     </style>
 </resources>

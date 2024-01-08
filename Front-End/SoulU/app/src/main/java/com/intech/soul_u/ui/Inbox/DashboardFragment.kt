@@ -1,4 +1,4 @@
-package com.intech.soul_u.ui.dashboard
+package com.intech.soul_u.ui.Inbox
 
 import android.os.Bundle
 import android.view.LayoutInflater
