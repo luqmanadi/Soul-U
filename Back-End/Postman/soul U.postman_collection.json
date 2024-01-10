@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "725e3bc1-c8b0-473b-83d4-3a41ab28e64d",
+		"name": "soul U",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31629896"
+	},
+	"item": [
+		{
+			"name": "articles",
+			"item": [
+				{
+					"name": "get article list",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
