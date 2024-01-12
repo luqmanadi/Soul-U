@@ -21,10 +21,15 @@ Soul-U is An application that can address mental health issues in teenagers by f
 ## Documentation
 
 ### Splash Screen
-![Soul-U](https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/SplashScreen%20SS.jpg)
+<a href="https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/SplashScreen%20SS.jpg">
+  <img src="https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/SplashScreen%20SS.jpg" alt="Soul-U Splash Screen" width="300">
+</a>
 
 ### Login Screen
-![Soul-U](https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/Login%20Screen%20SS.jpg) <br>
+<a href="https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/Login%20Screen%20SS.jpg">
+  <img src="https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/Login%20Screen%20SS.jpg" alt="Soul-U Login Screen" width="300">
+</a> 
+<br>
 On this screen, there is a login page where users can enter their email and password or use Google or Facebook account authentication. At the bottom, there is a "sign up" option for users who do not have an account yet, allowing them to register directly through that option.
 
 #### Next-Update soon-->
