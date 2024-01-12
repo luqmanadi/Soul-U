@@ -1,8 +1,8 @@
 # Soul-U
 
-## HackFest 2024
+## HackFest 2024 Project
 
-Name Team : INtech <br><br>
+Name Team : <b>INtech</b> <br>
 Here is our repository for HackFest 2024 project. Our team consist of 2 Hacker, 1 Hustler, and 1 Hipster.
 
 ## Our Warriors
@@ -21,18 +21,20 @@ Soul-U is An application that can address mental health issues in teenagers by f
 ## Documentation
 
 ### Splash Screen
-![Soul-U](https://github.com/detitanbwi/Bangkit-Capstone-Project/blob/main/Asset/documentation_result.png)
+![Soul-U](https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/SplashScreen%20SS.jpg)
 
 ### Login Screen
-![Soul-U](https://github.com/detitanbwi/Bangkit-Capstone-Project/blob/main/Asset/documentation_result.png) <br>
+![Soul-U](https://github.com/luqmanadi/Soul-U/blob/main/Front-End/Asset/Login%20Screen%20SS.jpg) <br>
 On this screen, there is a login page where users can enter their email and password or use Google or Facebook account authentication. At the bottom, there is a "sign up" option for users who do not have an account yet, allowing them to register directly through that option.
+
+#### Next-Update soon-->
 
 ## Repositories
 
-|    Branch Name     |                                         Link                                                       |
-| :----------------: | :--------------------------------------------------------------------------------------:           |
+|    Branch Name     |                                         Link                                |
+| :----------------: | :--------------------------------------------------------------------------:|
 |     Front-End      | [Front-End_Branch](https://github.com/luqmanadi/Soul-U/tree/main/Front-End) |
-|      Back-End      | [Back-End_Branch](https://github.com/luqmanadi/Soul-U/tree/main/Back-End)    |
+|      Back-End      |  [Back-End_Branch](https://github.com/luqmanadi/Soul-U/tree/main/Back-End)  |
 
 
 ## UI Design
