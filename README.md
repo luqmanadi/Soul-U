@@ -44,5 +44,5 @@ On this screen, there is a login page where users can enter their email and pass
 
 ## UI Design
 
-- Link Design : [UI Soul-U](https://www.figma.com/file/RvGhjMFnUZSKzTmaPZBbWk/Soul-U-App?type=design&node-id=0-1&mode=design&t=QJZTWkwhbPgFp3MW-0)
+- Link Design : [UI Soul-U](https://www.figma.com/file/b4mzAk2N6PmpcSrch3ANFG/Untitled?type=design&node-id=0%3A1&mode=design&t=TJLkq7YeNNUjdFwd-1)
 
