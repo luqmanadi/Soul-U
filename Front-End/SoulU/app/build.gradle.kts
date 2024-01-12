@@ -16,6 +16,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "BASE_URL", "\"http://localhost:80/soulU/public/api\"")
     }
 
     buildTypes {
@@ -36,6 +37,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        android.buildFeatures.buildConfig = true
     }
 }
 
@@ -62,6 +64,7 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.0.0")
     implementation("androidx.activity:activity-ktx:1.8.2")
     implementation("androidx.annotation:annotation:1.6.0")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
