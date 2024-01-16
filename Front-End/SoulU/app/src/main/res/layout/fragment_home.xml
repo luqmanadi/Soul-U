@@ -4,7 +4,233 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
     tools:context=".ui.home.HomeFragment">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_card_view_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center|top"
+                    android:contentDescription="@string/image_card_view_home"
+                    android:src="@drawable/image_card_home" />
+
+                <TextView
+                    android:id="@+id/tv_title_card_view_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_card_view_home"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/green_bottle"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_margin="13dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_our_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="@string/title_our_services"
+                android:textColor="@color/green_valley"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+            <RelativeLayout
+                android:id="@+id/layout_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_our_services"
+                app:layout_constraintTop_toBottomOf="@+id/tv_our_services">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view_article"
+                    android:layout_width="142dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/green_valley"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/img_card_article"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/image_article"
+                        android:contentDescription="@string/content_description_service" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_article"
+                    android:layout_alignStart="@+id/card_view_article"
+                    android:layout_alignEnd="@+id/card_view_article"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="@string/article"
+                    android:textColor="@color/green_valley"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_meditation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layout_article">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view_meditation"
+                    android:layout_width="142dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/green_valley"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/img_card_meditation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description_service"
+                        android:src="@drawable/image_meditation" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_meditation"
+                    android:layout_alignStart="@+id/card_view_meditation"
+                    android:layout_alignEnd="@+id/card_view_meditation"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="@string/meditation"
+                    android:textColor="@color/green_valley"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_diagnose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_article"
+                app:layout_constraintStart_toStartOf="@+id/layout_article"
+                app:layout_constraintTop_toBottomOf="@+id/layout_article">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view_diagnose"
+                    android:layout_width="142dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/green_valley"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/img_card_diagnose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description_service"
+                        android:src="@drawable/image_diagnose" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_diagnose"
+                    android:layout_alignStart="@+id/card_view_diagnose"
+                    android:layout_alignEnd="@+id/card_view_diagnose"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="@string/diagnose"
+                    android:textColor="@color/green_valley"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_consultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layout_diagnose">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view_consultation"
+                    android:layout_width="142dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/green_valley"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/img_card_consultation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description_service"
+                        android:src="@drawable/image_consultation" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_consultation"
+                    android:layout_alignStart="@+id/card_view_consultation"
+                    android:layout_alignEnd="@+id/card_view_consultation"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="@string/consultation"
+                    android:textColor="@color/green_valley"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

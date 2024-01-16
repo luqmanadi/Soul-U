@@ -4,13 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import com.intech.soul_u.ViewModelFactory
 import com.intech.soul_u.databinding.FragmentHomeBinding
-import com.intech.soul_u.ui.chat.ChatViewModel
 
 class HomeFragment : Fragment() {
 
@@ -35,7 +32,27 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setUpAction()
+    }
 
+    private fun setUpAction(){
+        binding.apply {
+            layoutArticle.setOnClickListener {
+
+            }
+
+            layoutMeditation.setOnClickListener {
+
+            }
+
+            layoutDiagnose.setOnClickListener {
+
+            }
+
+            layoutConsultation.setOnClickListener {
+
+            }
+        }
     }
 
     override fun onDestroyView() {

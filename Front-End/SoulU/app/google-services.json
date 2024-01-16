@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "205275916240",
+    "project_id": "soul-u",
+    "storage_bucket": "soul-u.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205275916240:android:e79fef6ef4ac5c195b7bd5",
+        "android_client_info": {
+          "package_name": "com.intech.soul_u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205275916240-o3iqdkhal7u82mo5goo3alu9ef7ft52p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intech.soul_u",
+            "certificate_hash": "43418e9e1ceee81936c0a0160d5d3e7985561756"
+          }
+        },
+        {
+          "client_id": "205275916240-s9h0qnrrdj79b7eqr9fmaaiga323lbdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9QfYzrZgDOdj7icEE5uFejZtAlkUgjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205275916240-s9h0qnrrdj79b7eqr9fmaaiga323lbdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

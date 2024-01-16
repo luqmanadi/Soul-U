@@ -6,6 +6,31 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.Material3.Toolbar.Surface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forest_frolic"
+            app:menu="@menu/menu_home"
+            android:minHeight="?actionBarSize">
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_horizontal_appbar"
+                android:contentDescription="@string/image_logo"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider1"
         style="@style/Widget.Material3.MaterialDivider"
@@ -23,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
         app:itemActiveIndicatorStyle="@color/white"
         android:background="@color/white"
         app:itemIconTint="@drawable/bottom_nav_color"
@@ -38,7 +64,7 @@
         android:id="@+id/nav_host_fragment_activity_main"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintLeft_toLeftOf="parent"

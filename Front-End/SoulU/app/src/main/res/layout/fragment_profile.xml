@@ -4,7 +4,236 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
     tools:context=".ui.profile.ProfileFragment">
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="26dp"
+        app:cardBackgroundColor="@color/forest_frolic"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/title_name_profile"
+                android:textColor="@color/green_valley"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="22dp"
+                android:autofillHints="name"
+                android:background="@drawable/bottom_line"
+                android:drawableEnd="@drawable/outline_edit_24"
+                android:enabled="false"
+                android:hint="@string/title_name_profile"
+                android:inputType="text"
+                android:text="@string/title_name_profile"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_name" />
+
+            <TextView
+                android:id="@+id/tv_title_email_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/title_email"
+                android:textColor="@color/green_valley"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_name"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="22dp"
+                android:autofillHints="name"
+                android:background="@drawable/bottom_line"
+                android:drawableEnd="@drawable/outline_edit_24"
+                android:enabled="false"
+                android:hint="@string/title_email"
+                android:inputType="textEmailAddress"
+                android:text="@string/title_email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_email_profile"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_email_profile" />
+
+            <TextView
+                android:id="@+id/tv_title_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/tv_title_phone_number"
+                android:textColor="@color/green_valley"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_email"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_email" />
+
+            <EditText
+                android:id="@+id/edit_text_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="22dp"
+                android:autofillHints="name"
+                android:background="@drawable/bottom_line"
+                android:drawableEnd="@drawable/outline_edit_24"
+                android:enabled="false"
+                android:hint="@string/tv_title_phone_number"
+                android:inputType="phone"
+                android:text="@string/telephone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_phone_number"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_phone_number" />
+
+            <TextView
+                android:id="@+id/tv_title_phone_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/gender"
+                android:textColor="@color/green_valley"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_phone_number"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_phone_number" />
+
+            <EditText
+                android:id="@+id/edit_text_gender"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="22dp"
+                android:autofillHints="name"
+                android:background="@drawable/bottom_line"
+                android:drawableEnd="@drawable/outline_edit_24"
+                android:enabled="false"
+                android:hint="@string/gender"
+                android:inputType="text"
+                android:text="@string/gender_profile"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_phone_gender"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_phone_gender" />
+
+            <TextView
+                android:id="@+id/tv_title_birth_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/birth_date"
+                android:textColor="@color/green_valley"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_gender"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_gender" />
+
+            <EditText
+                android:id="@+id/edit_text_birth_date"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="22dp"
+                android:autofillHints="name"
+                android:background="@drawable/bottom_line"
+                android:drawableEnd="@drawable/outline_edit_24"
+                android:enabled="false"
+                android:hint="@string/birth_date"
+                android:inputType="date"
+                android:text="@string/date_birth"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_phone_gender"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_birth_date" />
+
+            <TextView
+                android:id="@+id/button_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/logout"
+                android:textColor="@color/green_bottle"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_birth_date"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_birth_date"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_birth_date" />
+
+            <TextView
+                android:id="@+id/button_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/delete_account"
+                android:textColor="@color/green_bottle"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_birth_date"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_birth_date"
+                app:layout_constraintTop_toBottomOf="@+id/button_logout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo_profile"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        app:civ_border_color="@color/green_valley"
+        android:src="@drawable/image_diagnose"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/card_view_profile"
+        app:layout_constraintStart_toStartOf="@+id/card_view_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_edit_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/green_valley"
+        android:src="@drawable/baseline_camera_alt_24"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_profile"
+        app:layout_constraintEnd_toEndOf="@+id/photo_profile"
+        app:layout_constraintTop_toTopOf="@+id/photo_profile"
+        android:contentDescription="@string/edit_photo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

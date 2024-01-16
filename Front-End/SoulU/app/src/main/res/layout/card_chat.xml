@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:strokeColor="@color/orient_green">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo_profile_card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title_name_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/title_name_profile"
+                android:textColor="@color/green_valley"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/photo_profile_card"
+                app:layout_constraintTop_toTopOf="@+id/photo_profile_card" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider_chat"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                app:dividerColor="@color/orient_green"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_name_chat"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_name_chat" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/typing"
+                android:textColor="@color/piedmont"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title_name_chat"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_name_chat"
+                app:layout_constraintTop_toBottomOf="@+id/divider_chat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
