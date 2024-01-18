@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:menuCategory="container">
+        <item
+            android:id="@+id/more_menu"
+            android:icon="@drawable/menu"
+            app:showAsAction="ifRoom"
+            android:title="@string/more_menu"/>
+    </group>
+
+</menu>

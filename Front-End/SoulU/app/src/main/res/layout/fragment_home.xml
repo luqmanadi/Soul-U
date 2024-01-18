@@ -32,6 +32,7 @@
                     android:id="@+id/image_card_view_home"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
+                    android:padding="16dp"
                     android:layout_gravity="center|top"
                     android:contentDescription="@string/image_card_view_home"
                     android:src="@drawable/image_card_home" />
@@ -86,6 +87,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:padding="16dp"
                         android:src="@drawable/image_article"
                         android:contentDescription="@string/content_description_service" />
                 </com.google.android.material.card.MaterialCardView>
@@ -127,6 +129,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:padding="16dp"
                         android:contentDescription="@string/content_description_service"
                         android:src="@drawable/image_meditation" />
                 </com.google.android.material.card.MaterialCardView>
@@ -169,6 +172,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:padding="16dp"
                         android:contentDescription="@string/content_description_service"
                         android:src="@drawable/image_diagnose" />
                 </com.google.android.material.card.MaterialCardView>
@@ -211,6 +215,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:padding="16dp"
                         android:contentDescription="@string/content_description_service"
                         android:src="@drawable/image_consultation" />
                 </com.google.android.material.card.MaterialCardView>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity"
-    android:background="@color/forest_frolic">
+    android:background="@color/forest_frolic"
+    tools:context=".ui.login.LoginActivity">
 
     <ImageView
         android:id="@+id/image_logo"
@@ -32,68 +32,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_logo" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_edit_text_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginStart="63dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="63dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/inter_medium"
         android:hint="@string/title_email"
-        app:hintTextColor="@color/green_valley"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/green_valley"
         android:textColorHint="@color/green_valley"
-        app:cursorColor="@color/green_valley"
-        app:boxBackgroundColor="@color/glacial_water_green"
+        android:textColorHighlight="@color/homeopathic_lime"
+        android:textColorLink="@color/green_valley"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/rounded_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_login">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textColor="@color/green_valley"
-            android:textColorHint="@color/green_valley"
-            android:textCursorDrawable="@color/green_valley"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter"
-            android:inputType="textEmailAddress"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_login"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_edit_text_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginStart="63dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="63dp"
-        android:hint="@string/title_password"
-        app:boxBackgroundColor="@color/glacial_water_green"
-        app:endIconDrawable="@drawable/view_password"
-        app:endIconTint="@color/green_valley"
-        app:endIconMode="password_toggle"
         android:background="@drawable/rounded_background"
-        app:hintTextColor="@color/green_valley"
+        android:fontFamily="@font/inter_medium"
+        android:hint="@string/title_password"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="50dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/green_valley"
         android:textColorHint="@color/green_valley"
-        app:cursorColor="@color/green_valley"
+        android:textColorHighlight="@color/homeopathic_lime"
+        android:textColorLink="@color/green_valley"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_edit_text_layout">
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_text"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter"
-            android:textColorHint="@color/green_valley"
-            android:textColor="@color/green_valley"
-            android:inputType="textPassword"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <ImageButton
+        android:id="@+id/togglePasswordButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/title_password"
+        android:src="@drawable/view_alt_light"
+        app:layout_constraintBottom_toBottomOf="@+id/password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/password_edit_text" />
 
     <TextView
         android:id="@+id/tv_forgot_password"
@@ -104,8 +107,8 @@
         android:text="@string/forgot_password"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/password_edit_text_layout"
-        app:layout_constraintTop_toBottomOf="@+id/password_edit_text_layout" />
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
 
     <Button
         android:id="@+id/btn_login"
@@ -125,26 +128,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
+        android:fontFamily="@font/inter_medium"
         android:gravity="center_horizontal"
         android:text="@string/or_use"
-        android:textSize="15sp"
         android:textColor="@color/white"
-        android:fontFamily="@font/inter_medium"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider1"
+        style="@style/Widget.Material3.MaterialDivider"
         android:layout_width="105dp"
         android:layout_height="wrap_content"
-        app:dividerThickness="2dp"
         android:layout_marginEnd="17dp"
-        style="@style/Widget.Material3.MaterialDivider"
         app:dividerColor="@color/white"
+        app:dividerThickness="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_or_use"
         app:layout_constraintEnd_toStartOf="@+id/text_or_use"
-        app:layout_constraintTop_toTopOf="@+id/text_or_use"
-        app:layout_constraintBottom_toBottomOf="@+id/text_or_use"/>
+        app:layout_constraintTop_toTopOf="@+id/text_or_use" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider2"
@@ -152,8 +155,8 @@
         android:layout_width="105dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        app:dividerThickness="2dp"
         app:dividerColor="@color/white"
+        app:dividerThickness="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/text_or_use"
         app:layout_constraintStart_toEndOf="@+id/text_or_use"
         app:layout_constraintTop_toTopOf="@+id/text_or_use" />
@@ -163,11 +166,11 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="135dp"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
         android:layout_marginTop="14dp"
-        android:src="@drawable/google"
-        android:contentDescription="@string/image_logo"
         android:background="@drawable/rounded_background"
+        android:contentDescription="@string/image_logo"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/google"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_or_use" />
 
@@ -176,13 +179,13 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginEnd="135dp"
-        android:src="@drawable/facebook"
+        android:background="@drawable/rounded_background"
         android:contentDescription="@string/image_logo"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:background="@drawable/rounded_background"
+        android:src="@drawable/facebook"
         app:layout_constraintBottom_toBottomOf="@+id/sign_in_google"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sign_in_google"/>
+        app:layout_constraintTop_toTopOf="@+id/sign_in_google" />
 
     <TextView
         android:id="@+id/tv_dont_have_accout"

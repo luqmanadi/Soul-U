@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:background="@color/forest_frolic"
             app:menu="@menu/menu_home"
+            android:paddingEnd="10dp"
             android:minHeight="?actionBarSize">
             <ImageView
                 android:id="@+id/logoImageView"

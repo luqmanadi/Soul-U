@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.intech.soul_u.ViewModelFactory
 import com.intech.soul_u.databinding.FragmentChatBinding
 
 class ChatFragment : Fragment() {
@@ -15,9 +14,7 @@ class ChatFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private val viewModel by viewModels<ChatViewModel> {
-        ViewModelFactory.getInstance(requireActivity())
-    }
+    private val viewModel by viewModels<ChatViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,

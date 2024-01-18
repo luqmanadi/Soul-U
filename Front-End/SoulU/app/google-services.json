@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "205275916240",
+    "firebase_url": "https://soul-u-default-rtdb.firebaseio.com",
     "project_id": "soul-u",
     "storage_bucket": "soul-u.appspot.com"
   },

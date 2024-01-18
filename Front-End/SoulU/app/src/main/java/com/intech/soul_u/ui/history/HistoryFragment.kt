@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.intech.soul_u.ViewModelFactory
 import com.intech.soul_u.databinding.FragmentHistoryBinding
 
 class HistoryFragment : Fragment() {
@@ -15,10 +14,7 @@ class HistoryFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private val viewModel by viewModels<HistoryViewModel> {
-        ViewModelFactory.getInstance(requireActivity())
-    }
-
+    private val viewModel by viewModels<HistoryViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

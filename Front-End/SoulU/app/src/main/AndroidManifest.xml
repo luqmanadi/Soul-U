@@ -15,6 +15,24 @@
         android:theme="@style/Theme.SoulU"
         tools:targetApi="31">
         <activity
+            android:name=".ui.result_diagnose.ResultDiagnoseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnosis.DiagnosisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.consultation.ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.meditation.MeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.article.ArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.room_chat.RoomChatActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.register.RegisterActivity"
             android:exported="false" />
         <activity
@@ -29,13 +47,20 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="false"/>
-
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".firebase.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

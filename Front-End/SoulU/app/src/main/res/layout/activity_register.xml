@@ -32,102 +32,112 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_logo" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_edit_text_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginStart="63dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="63dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/inter_medium"
         android:hint="@string/title_email"
-        app:hintTextColor="@color/green_valley"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/green_valley"
         android:textColorHint="@color/green_valley"
-        app:cursorColor="@color/green_valley"
-        app:boxBackgroundColor="@color/glacial_water_green"
+        android:textColorHighlight="@color/homeopathic_lime"
+        android:textColorLink="@color/green_valley"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/rounded_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_login">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textColor="@color/green_valley"
-            android:textColorHint="@color/green_valley"
-            android:textCursorDrawable="@color/green_valley"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter"
-            android:inputType="textEmailAddress"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_login"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_edit_text_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginStart="63dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="63dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/inter_medium"
         android:hint="@string/title_password"
-        app:boxBackgroundColor="@color/glacial_water_green"
-        app:endIconDrawable="@drawable/view_password"
-        app:endIconTint="@color/green_valley"
-        app:endIconMode="password_toggle"
-        android:background="@drawable/rounded_background"
-        app:hintTextColor="@color/green_valley"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="50dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/green_valley"
         android:textColorHint="@color/green_valley"
-        app:cursorColor="@color/green_valley"
+        android:textColorHighlight="@color/homeopathic_lime"
+        android:textColorLink="@color/green_valley"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_edit_text_layout">
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_text"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter"
-            android:textColorHint="@color/green_valley"
-            android:textColor="@color/green_valley"
-            android:inputType="textPassword"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <ImageButton
+        android:id="@+id/togglePasswordButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/title_password"
+        android:src="@drawable/view_alt_light"
+        app:layout_constraintBottom_toBottomOf="@+id/password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/password_edit_text" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirm_password_edit_text_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/confirm_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginStart="63dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="63dp"
-        android:hint="@string/confirm_password"
-        app:boxBackgroundColor="@color/glacial_water_green"
-        app:endIconDrawable="@drawable/view_password"
-        app:endIconTint="@color/green_valley"
-        app:endIconMode="password_toggle"
         android:background="@drawable/rounded_background"
-        app:hintTextColor="@color/green_valley"
+        android:fontFamily="@font/inter_medium"
+        android:hint="@string/confirm_password"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="50dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textColor="@color/green_valley"
         android:textColorHint="@color/green_valley"
-        app:cursorColor="@color/green_valley"
+        android:textColorHighlight="@color/homeopathic_lime"
+        android:textColorLink="@color/green_valley"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_edit_text_layout">
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirm_password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter"
-            android:textColorHint="@color/green_valley"
-            android:textColor="@color/green_valley"
-            android:inputType="textPassword"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <ImageButton
+        android:id="@+id/toggleConfirmPasswordButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/title_password"
+        android:src="@drawable/view_alt_light"
+        app:layout_constraintBottom_toBottomOf="@+id/confirm_password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_password_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/confirm_password_edit_text" />
+
 
     <Button
         android:id="@+id/btn_sign_up"
@@ -140,7 +150,7 @@
         android:textColor="@color/green_valley"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password_edit_text_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_edit_text" />
 
     <TextView
         android:id="@+id/text_or_use"
